@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+  <html lang="en">
+  
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="shortcut icon" href="./images/favicon.jpg" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Website | Home</title>
+  </head>
+  
+  <body>
+  
+  <header>
+    <div class="header">
+     <div class="logo">
+  <img src="logo.png" alt="Logo">
+  <span>Mr. Recipe</span>
+</div>
+
+      <nav class="nav">
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="recipes.html">Food</a></li>
+          <li><a href="rating.html">Feedback</a></li>
+          <li><a href="admin.html">Admin</a></li>
+        </ul>
+      </nav>
+      
+      <div class="hamburger-menu" id="hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+
+      <div class="account">
+        <ul>
+          <a href="home.html">
+            <li>
+              <i class="fa-solid fa-house-chimney"></i>
+            </li>
+          </a>
+
+<a href="javascript:void(0);" onclick="toggleSearch(event)">
+  <li>
+    <i class="fa-solid fa-magnifying-glass seachicon" id="searchicon2"></i>
+  </li>
+</a>
+
+<div class="search" id="searchInput">
+  <input type="search" placeholder="Search...">
+  <i class="fa-solid fa-magnifying-glass srchicon"></i>
+  <span class="close-btn" onclick="toggleSearch(event)">X</span>
+</div>
+
+
+
+          <div class="search" id="searchinput2">
+            <input type="search">
+            <i class="fa-solid fa-magnifying-glass srchicon"></i>
+          </div>
+
+<a href="#" id="userLoginTrigger">
+  <li>
+    <i class="fa-solid fa-user" id="user-lap"></i> </li>
+</a>
+
+        </ul>
+      </div>
+    </div>
+    
+    <nav class="mobile-nav" id="mobileNav">
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="recipes.html">Food</a></li>
+        <li><a href="rating.html">Rating</a></li>
+      </ul>
+      <div class="close-menu" id="closeMenu">×</div>
+    </nav>
+
+  </header>
+
+<section class="food-section">
+  <!-- Trending Foods -->
+  <div class="trending">
+    <h2>Trending <span class="highlight">Foods</span></h2>
+    <div class="pogi-list" id="trendingList">
+      <div class="pogi-item">
+        <img src="recipe1.jpeg" alt="Trending Food 1">
+        <h3>Sushi Delight</h3>
+        <button class="view-recipe" onclick="openModal('Sushi Delight', ['Rice', 'Seaweed', 'Salmon'], 'Roll the ingredients and serve fresh.')">View Recipe</button>
+      </div>
+      <div class="pogi-item">
+        <img src="recipe2.jpeg" alt="Trending Food 2">
+        <h3>Berry Pancakes</h3>
+        <button class="view-recipe" onclick="openModal('Berry Pancakes', ['Flour', 'Milk', 'Berries'], 'Mix all ingredients, cook on a pan, and top with berries.')">View Recipe</button>
+      </div>
+      <div class="pogi-item">
+        <img src="recipe3.jpeg" alt="Trending Food 3">
+        <h3>Spaghetti Carbonara</h3>
+        <button class="view-recipe" onclick="openModal('Spaghetti Carbonara', ['Spaghetti', 'Eggs', 'Bacon'], 'Boil pasta, mix with eggs and bacon for a creamy finish.')">View Recipe</button>
+      </div>
+      <div class="pogi-item">
+        <img src="recipe4.jpeg" alt="Trending Food 4">
+        <h3>Vegetable Stir Fry</h3>
+        <button class="view-recipe" onclick="openModal('Vegetable Stir Fry', ['Broccoli', 'Carrots', 'Soy Sauce'], 'Stir fry vegetables in a hot pan and add soy sauce for flavor.')">View Recipe</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Food Menu -->
+  <div class="pogi-menu">
+    <hr class="hr">
+    <h2>Food <span class="highlight">Menu</span></h2>
+    <div class="pogi-grid" id="foodMenuList">
+      <div class="pogi-item">
+        <img src="rep1.jpeg" alt="Pogi 1">
+        <h3>Beef Tacos</h3>
+        <button class="view-recipe" onclick="openModal('Beef Tacos', ['Beef', 'Taco Shells', 'Cheese'], 'Cook beef, fill taco shells, and top with cheese.')">View Recipe</button>
+      </div>
+      <div class="pogi-item">
+        <img src="rep2.jpeg" alt="Pogi 2">
+        <h3>Chicken Curry</h3>
+        <button class="view-recipe" onclick="openModal('Chicken Curry', ['Chicken', 'Curry Paste', 'Coconut Milk'], 'Cook chicken, add curry paste and coconut milk, and simmer.')">View Recipe</button>
+      </div>
+      <div class="pogi-item">
+        <img src="recipe4.jpeg" alt="Pogi 3">
+        <h3>Vegetable Stir Fry</h3>
+        <button class="view-recipe" onclick="openModal('Vegetable Stir Fry', ['Broccoli', 'Carrots', 'Soy Sauce'], 'Stir fry vegetables and add soy sauce for flavor.')">View Recipe</button>
+      </div>
+      <div class="pogi-item">
+        <img src="rep3.jpeg" alt="Pogi 4">
+        <h3>Pizza Margherita</h3>
+        <button class="view-recipe" onclick="openModal('Pizza Margherita', ['Pizza Dough', 'Tomato Sauce', 'Mozzarella'], 'Spread tomato sauce on dough, add cheese, and bake.')">View Recipe</button>
+      </div>
+      <div class="pogi-item">
+        <img src="rep4.jpeg" alt="Pogi 5">
+        <h3>Sushi Rolls</h3>
+        <button class="view-recipe" onclick="openModal('Sushi Rolls', ['Rice', 'Seaweed', 'Fish'], 'Roll rice and fish in seaweed sheets to make sushi rolls.')">View Recipe</button>
+      </div>
+      <div class="pogi-item">
+        <img src="rep5.jpeg" alt="Pogi 6">
+        <h3>Spaghetti Bolognese</h3>
+        <button class="view-recipe" onclick="openModal('Spaghetti Bolognese', ['Spaghetti', 'Ground Beef', 'Tomato Sauce'], 'Cook spaghetti, make sauce with beef, and combine.')">View Recipe</button>
+      </div>
+      <div class="pogi-item">
+        <img src="rep6.jpeg" alt="Pogi 7">
+        <h3>Cheese Burger</h3>
+        <button class="view-recipe" onclick="openModal('Cheese Burger', ['Ground Beef', 'Buns', 'Cheese'], 'Grill beef patty, assemble burger with buns and cheese.')">View Recipe</button>
+      </div>
+      <div class="pogi-item">
+        <img src="rep7.jpeg" alt="Pogi 8">
+        <h3>Pasta Primavera</h3>
+        <button class="view-recipe" onclick="openModal('Pasta Primavera', ['Pasta', 'Vegetables', 'Parmesan'], 'Cook pasta and vegetables, top with parmesan cheese.')">View Recipe</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Modal -->
+<div id="recipeModal" class="modal">
+  <div class="modal-content">
+    <span class="close-modal" onclick="closeModal()">&times;</span>
+    <h2 id="recipeTitle"></h2>
+    <h3>Ingredients:</h3>
+    <p id="recipeIngredients"></p>
+    <h3>Instructions:</h3>
+    <p id="recipeInstructions"></p>
+  </div>
+</div>
+
+
+  <script src="main.js"></script>
+</body>
+
+</html>

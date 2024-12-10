@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+    <html lang="en">
+    
+    <head>
+      <link rel="stylesheet" href="styles.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+      <link rel="shortcut icon" href="./images/favicon.jpg" type="image/x-icon">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Food Website | Home</title>
+    </head>
+    
+    <body>
+    
+  <header>
+    <div class="header">
+     <div class="logo">
+  <img src="logo.png" alt="Logo">
+  <span>Mr. Recipe</span>
+</div>
+
+      <nav class="nav">
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="recipes.html">Food</a></li>
+          <li><a href="rating.html">Feedback</a></li>
+          <li><a href="admin.html">Admin</a></li>
+        </ul>
+      </nav>
+      
+      <div class="hamburger-menu" id="hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+
+      <div class="account">
+        <ul>
+          <a href="home.html">
+            <li>
+              <i class="fa-solid fa-house-chimney"></i>
+            </li>
+          </a>
+
+<a href="javascript:void(0);" onclick="toggleSearch(event)">
+  <li>
+    <i class="fa-solid fa-magnifying-glass seachicon" id="searchicon2"></i>
+  </li>
+</a>
+
+<div class="search" id="searchInput">
+  <input type="search" placeholder="Search...">
+  <i class="fa-solid fa-magnifying-glass srchicon"></i>
+  <span class="close-btn" onclick="toggleSearch(event)">X</span>
+</div>
+
+
+
+          <div class="search" id="searchinput2">
+            <input type="search">
+            <i class="fa-solid fa-magnifying-glass srchicon"></i>
+          </div>
+
+<a href="#" id="userLoginTrigger">
+  <li>
+    <i class="fa-solid fa-user" id="user-lap"></i> </li>
+</a>
+
+        </ul>
+      </div>
+    </div>
+    
+    <nav class="mobile-nav" id="mobileNav">
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="recipes.html">Food</a></li>
+        <li><a href="rating.html">Rating</a></li>
+      </ul>
+      <div class="close-menu" id="closeMenu">×</div>
+    </nav>
+
+  </header>
+      
+<section class="rating-section">
+    <h2>We Value Your <span class="highlight">Feedback</span></h2>
+    <p>At Mr., we are committed to delivering the best products and services. Your opinion matters to us, and we truly appreciate the time you take to provide feedback. By sharing your thoughts, you help us improve and serve you better. Whether it's a compliment, suggestion, or concern, your feedback plays a crucial role in shaping our future offerings. Thank you for helping us grow and improve!</p>
+    </section>
+  <section class="comment-section">
+     <h2>Rate <span class="color">Here</span></h2>
+<div class="stars">
+  <span class="star" data-value="1">&#9733;</span>
+  <span class="star" data-value="2">&#9733;</span>
+  <span class="star" data-value="3">&#9733;</span>
+  <span class="star" data-value="4">&#9733;</span>
+  <span class="star" data-value="5">&#9733;</span>
+</div>
+    
+
+    <h2>Write Your Feedback</h2>
+    <form id="comment-form">
+        <textarea id="comment-content" name="comment" rows="4" placeholder="Share your thoughts..."></textarea>
+        <button type="submit" class="submit-comment">Submit</button>
+    </form>
+
+    <div id="no-comments" style="display: none;">No comments yet. Be the first to share your thoughts!</div>
+
+    <div id="comment-section">
+        <h3>Comments</h3>
+        <ul id="comment-list"></ul>
+    </div>
+    </section>
+    
+    <script src="admin.js">
+    
+  
+    </script>
+</body>
+</html> 

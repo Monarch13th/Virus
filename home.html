@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link rel="shortcut icon" href="./images/favicon.jpg" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Website | Home</title>
+</head>
+
+<body>
+  
+  <header>
+    <div class="header">
+     <div class="logo">
+  <img src="logo.png" alt="Logo">
+  <span>Mr. Recipe</span>
+</div>
+
+      <nav class="nav">
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="recipes.html">Food</a></li>
+          <li><a href="rating.html">Feedback</a></li>
+          <li><a href="admin.html">Admin</a></li>
+        </ul>
+      </nav>
+      
+      <div class="hamburger-menu" id="hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+
+      <div class="account">
+        <ul>
+          <a href="home.html">
+            <li>
+              <i class="fa-solid fa-house-chimney"></i>
+            </li>
+          </a>
+
+<a href="javascript:void(0);" onclick="toggleSearch(event)">
+  <li>
+    <i class="fa-solid fa-magnifying-glass seachicon" id="searchicon2"></i>
+  </li>
+</a>
+
+<div class="search" id="searchInput">
+  <input type="search" placeholder="Search...">
+  <i class="fa-solid fa-magnifying-glass srchicon"></i>
+  <span class="close-btn" onclick="toggleSearch(event)">X</span>
+</div>
+
+
+
+          <div class="search" id="searchinput2">
+            <input type="search">
+            <i class="fa-solid fa-magnifying-glass srchicon"></i>
+          </div>
+
+<a href="#" id="userLoginTrigger">
+  <li>
+    <i class="fa-solid fa-user" id="user-lap"></i> </li>
+</a>
+
+        </ul>
+      </div>
+    </div>
+    
+    <nav class="mobile-nav" id="mobileNav">
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="recipes.html">Food</a></li>
+        <li><a href="rating.html">Rating</a></li>
+      </ul>
+      <div class="close-menu" id="closeMenu">×</div>
+    </nav>
+
+  </header>
+  
+<section class="hero">
+
+  <div class="hero-content">
+<h1>Enjoy your <span class="highlight">Delicious Food</span> in your Healthy Life</h1>
+
+    <p>Discover a wide range of mouthwatering recipes to enhance your cooking experience. Whether you're a beginner or a seasoned chef, Mr. Recipe brings you delicious meals, easy instructions, and creative cooking ideas for every occasion. Let's cook, create, and enjoy together!</p>
+    <button id="startCooking">Start Cooking</button>
+  </div>
+  
+    <div class="hero-logo">
+      <img src="logo1.png" alt="Logo">
+    </div>
+    
+</section>
+
+
+
+<section class="menu-container">
+  <div class="menu">
+  <div class="menu-item">
+    <img src="breakfast.png" alt="Food 1">
+    <h3>Breakfast</h3>
+    <p>Enjoy a hearty and healthy breakfast, featuring fresh fruit, fluffy pancakes, and other delicious morning favorites.</p>
+    <a href="recipes.html"><button>See Menu</button></a>
+</div>
+
+    <div class="menu-item">
+      <img src="lunch.png" alt="Food 2">
+      <h3>Lunch</h3>
+      <p>Indulge in an exquisite lunch experience, crafted with the finest ingredients and impeccable service.</p>
+  <a href="recipes.html"><button>See Menu</button></a>
+    </div>
+    <div class="menu-item">
+      <img src="dinner.png" alt="Food 3">
+      <h3>Dinner</h3>
+<p>Indulge in an exquisite lunch experience, crafted with the finest ingredients and impeccable service.</p>
+<a href="recipes.html"><button>See Menu</button></a>
+    </div>
+  </div>
+</section>
+
+<section class="why-choose-us">
+  <img src="why.png" alt="Delicious Food" class="food-image">
+  <div class="content">
+    <h2>Why People Choose Us?</h2>
+    <div class="reason">
+      <img src="log1.png" alt="Icon 1">
+      <div>
+        <h3>French Style</h3>
+<p>Indulge in a memorable dinner experience with our selection of expertly prepared dishes and a warm, inviting atmosphere.</p>
+      </div>
+    </div>
+    <div class="reason">
+      <img src="log2.png" alt="Icon 2">
+      <div>
+        <h3>Beef-Overpower</h3>
+     <p>Indulge in an exquisite lunch experience, crafted with the finest ingredients and impeccable service.</p>
+      </div>
+    </div>
+    <div class="reason">
+      <img src="log3.png" alt="Icon 3">
+      <div>
+        <h3>Stylish-Beef</h3>
+<p>Enjoy a hearty and healthy breakfast, featuring fresh fruit, fluffy pancakes, and other delicious morning favorites.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="popular-food-items">
+  <h2>Our Popular Food Items</h2>
+  <p>Explore our most popular dishes, crafted with the finest ingredients and served with care. Whether you're in the mood for something savory or sweet, we have something to satisfy every craving!</p>
+  <div class="food-items">
+    <div class="food-item">
+      <img src="1.png" alt="Food 1">
+      <h3>Beef Royalty</h3>
+     <a href="recipes.html"><button>See Menu</button></a>
+    </div>
+    <div class="food-item">
+      <img src="2.png" alt="Food 2">
+      <h3>Beef-gabbage</h3>
+      <a href="recipes.html"><button>See Menu</button></a>
+    </div>
+    <div class="food-item">
+      <img src="3.png" alt="Food 3">
+      <h3>Beef-potato</h3>
+     <a href="recipes.html"><button>See Menu</button></a>
+    </div>
+    <div class="food-item">
+      <img src="4.png" alt="Food 4">
+      <h3>Beef-tacos</h3>
+     <a href="recipes.html"><button>See Menu</button></a>
+    </div>
+  </div>
+</section>
+
+<section class="customer-feedback">
+  <div class="feedback-container">
+    <!-- Feedback Text Section -->
+    <div class="feedback-content">
+      <h2>Customer <span class="highlight">Feedback</span></h2>
+<p>Your feedback helps us create a website that's easier to use, more informative, and more enjoyable for everyone.  By sharing your experiences, you're directly contributing to a better online experience for yourself and other users.</p>
+<p>Tell us what you think!</p>
+     <div class="feedback-stats">
+  <div class="stat-item">
+    <i class="fas fa-thumbs-up"></i>
+    <span class="number">68</span>
+    <span class="label">Total Review</span>
+  </div>
+  <div class="stat-item">
+    <i class="fas fa-trophy"></i>
+    <span class="number">956</span>
+    <span class="label">Total Feedback</span>
+  </div>
+</div>
+
+    </div>
+
+    <!-- Chef Image Section -->
+    <div class="image-container">
+      <img src="chef.png" alt="Chef" class="chef-image">
+    </div>
+  </div>
+</section>
+
+<section class="login-section">
+    <!-- Popup Login Form -->
+    <div id="loginPopup" class="popup">
+        <div class="popup-content">
+            <span id="closePopup" class="close">&times;</span>
+            
+            <!-- Login Form -->
+            <div id="loginForm" class="form-container">
+                <h2>Login</h2>
+                <form class="login-form" action="#" method="post" onsubmit="login(event)">
+                    <label for="login-username">Username</label>
+                    <input type="text" id="login-username" name="username" placeholder="Enter your username" required>
+
+                    <label for="login-password">Password</label>
+                    <input type="password" id="login-password" name="password" placeholder="Enter your password" required>
+
+                    <button type="submit">Login</button>
+                </form>
+
+                <div class="login-links">
+                    <a href="#" class="forgot-pass" onclick="showForgotPassword()">Forgot your password?</a>
+                    <p>Don't have an account? <a href="#" class="create-acc" onclick="showCreateAccount()">Create Account</a></p>
+                </div>
+            </div>
+
+            <!-- Create Account Form -->
+            <div id="createAccountForm" class="form-container" style="display: none;">
+                <h2>Create Account</h2>
+                <form class="login-form" action="#" method="post" onsubmit="createAccount(event)">
+                    <label for="username">Username</label>
+                    <input type="text" id="create-username" name="username" placeholder="Enter your username" required>
+                    
+                    <label for="password">Password</label>
+                    <input type="password" id="create-password" name="password" placeholder="Create a password" required>
+
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required>
+
+                    <button type="submit">Sign Up</button>
+                </form>
+
+                <div class="login-links">
+                    <a href="#" onclick="showLogin()">Back to Login</a>
+                </div>
+            </div>
+
+            <!-- Forgot Password Form -->
+            <div id="forgotPasswordForm" class="form-container" style="display: none;">
+                <h2>Forgot Password</h2>
+                <p>Enter your email address to reset your password.</p>
+                <form class="login-form" action="#" method="post" onsubmit="forgotPassword(event)">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    <button type="submit">Send</button>
+                </form>
+                <div class="login-links">
+                    <a href="#" onclick="showLogin()">Back to Login</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<script src="main.js"></script>
+
+</body>
+
+</html>

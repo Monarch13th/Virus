@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+    <html lang="en">
+    
+    <head>
+      <link rel="stylesheet" href="styles.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+      <link rel="shortcut icon" href="./images/favicon.jpg" type="image/x-icon">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Food Website | Home</title>
+    </head>
+    
+    <body>
+    
+  <header>
+    <div class="header">
+     <div class="logo">
+  <img src="logo.png" alt="Logo">
+  <span>Mr. Recipe</span>
+</div>
+
+      <nav class="nav">
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="recipes.html">Food</a></li>
+          <li><a href="rating.html">Feedback</a></li>
+          <li><a href="admin.html">Admin</a></li>
+        </ul>
+      </nav>
+      
+      <div class="hamburger-menu" id="hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+
+      <div class="account">
+        <ul>
+          <a href="home.html">
+            <li>
+              <i class="fa-solid fa-house-chimney"></i>
+            </li>
+          </a>
+
+<a href="javascript:void(0);" onclick="toggleSearch(event)">
+  <li>
+    <i class="fa-solid fa-magnifying-glass seachicon" id="searchicon2"></i>
+  </li>
+</a>
+
+<div class="search" id="searchInput">
+  <input type="search" placeholder="Search...">
+  <i class="fa-solid fa-magnifying-glass srchicon"></i>
+  <span class="close-btn" onclick="toggleSearch(event)">X</span>
+</div>
+
+
+
+          <div class="search" id="searchinput2">
+            <input type="search">
+            <i class="fa-solid fa-magnifying-glass srchicon"></i>
+          </div>
+
+<a href="#" id="userLoginTrigger">
+  <li>
+    <i class="fa-solid fa-user" id="user-lap"></i> </li>
+</a>
+
+        </ul>
+      </div>
+    </div>
+    
+    <nav class="mobile-nav" id="mobileNav">
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="recipes.html">Food</a></li>
+        <li><a href="rating.html">Rating</a></li>
+      </ul>
+      <div class="close-menu" id="closeMenu">×</div>
+    </nav>
+
+  </header>
+ 
+<section class="about-us">
+   
+    <div class="about-us-text">
+       <h1>About Us</h1>
+        <p>
+            Welcome to Mr. Recipe! We are passionate about creating unforgettable culinary experiences. 
+            Our mission is to bring you the best recipes, expert tips, and a world of flavors, all in one place. 
+            From hearty home-cooked meals to gourmet creations, Mr. Recipe is here to inspire your cooking journey.
+        </p>
+        <p>
+            Whether you're a seasoned chef or a beginner in the kitchen, our step-by-step guides and creative ideas 
+            make cooking fun, easy, and delicious. Join us and explore the joy of cooking like never before!
+        </p>
+    </div>
+    <img src="Hub.png" alt="Mr. Recipe Icon" class="hub">
+</section>
+
+
+    <!-- Golden Chefs Section -->
+    <section class="golden-chefs">
+        <h2>Our Golden Chefs</h2>
+        <div class="chefs">
+           <div class="chef-card">
+    <img src="chef1.png" alt="Chef Image">
+    <h3>Isabella Moretti</h3>
+    <p class="chef-description">Renowned for her authentic Italian cuisine and creative plating techniques.</p>
+</div>
+<div class="chef-card">
+    <img src="chef2.png" alt="Chef Image">
+    <h3>Sofia Laurent</h3>
+    <p class="chef-description">Specializes in French pastries, blending tradition with modern flavors.</p>
+</div>
+<div class="chef-card">
+    <img src="chef3.png" alt="Chef Image">
+    <h3>Aisha Rahmani</h3>
+    <p class="chef-description">An expert in Middle Eastern dishes with a focus on bold spices and textures.</p>
+</div>
+<div class="chef-card">
+    <img src="chef4.png" alt="Chef Image">
+    <h3>Claire Bennett</h3>
+    <p class="chef-description">Known for her innovative take on classic American comfort food.</p>
+</div>
+
+        </div>
+    </section>
+
+<section class="our-story">
+    <h2>Our Story</h2>
+    <div class="story-text">
+        <p>At Mr. Recipe, our journey began with a simple passion for cooking and a desire to share the joy of food. Our founder, a culinary enthusiast, started by experimenting with recipes from all over the world and discovering the magic that happens when ingredients come together.</p>
+        <p>From humble beginnings, Mr. Recipe has grown into a community of food lovers, home cooks, and seasoned chefs, all coming together to create, learn, and inspire. Whether you're a beginner in the kitchen or a seasoned pro, we aim to make every cooking experience enjoyable, easy, and delicious. Join us on this flavorful adventure, and let's create memorable meals together!</p>
+    </div>
+</section>
+
+ <script src="main.js"></script>
+</body>
+</html>
